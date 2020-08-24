@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<link type="text/css" href="static/nav2.css" rel="stylesheet">
+<body>
+<nav>
+    <div id="nav-bar">
+        <h4 class="logo"><a href="{{url_for('home')}}" id="theo">Theotim Herin</a></h4>
+            <ul class="nav-links">
+                <li><a href="{{url_for('home')}}" id="contact-link">Contact</a></li>
+                <li><a href="{{url_for('home')}}" id="projet">Projet</a></li>
+            </ul>
+    </div>
+
+
+    <div id="head">
+        <h1 id="title" class="typeWriter" data-checkVisible = " true "   data-speed = " 4 " data-text='["Hello,<br> Je suis Theotim <br>Etudiant développeur Python"]'></h1>
+    </div>
+</nav>
+<script src ="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
+<script src="static\javascript\nav2.js"></script>
+
+</body>
+  {% block content %}{% endblock %}

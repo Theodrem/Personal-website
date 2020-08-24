@@ -1,0 +1,85 @@
+{% extends "nav.html" %}
+{% block content %}
+<head>
+
+    <meta charset="UTF-8">
+    <link type="text/css" href="static/accueil.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Theotim Herin</title>
+
+</head>
+<body>
+<div id="ensemble">
+    <h1 id="welcome">Welcome !</h1>
+
+        <h2>Projets</h2>
+        <div id="projets">
+            <div class="image">
+                <a href="#" class="tab"><img src="static/image/icone-smooth.png"></a>
+                <div class="hover">
+                    <h2><a href="">SmoothieFit.fr</a></h2>
+                </div>
+            </div>
+
+            <div class="image">
+                    <a href="#" class="tab"><img src="static\image\iconeSIte.png"></a>
+                <div class="hover">
+                    <h2><a href="#">Site Perso</a></h2>
+                </div>
+            </div>
+        </div>
+    <h2>Contactez-moi</h2>
+<div id="contact">
+    <div id="droite">
+        <img src="static/image/contact-orid.png" id="ordix">
+        <p id="bio">Je suis à la recherche d'une entreprise,<br>
+           En vue d'intégrer le parcours de<br>
+          développeur d'application Python<br>
+          d'Openclassrooms en alternance.<br>
+          Vous pouvez voir tous mes projets,<br>
+          mon cv et mon Github sont<br>
+          en bas de la page.</p>
+        <div id="bouton">
+            <p><a href="C:\Users\UX430\Desktop\flaskproject\app\templates\static\image\cv.pdf" target="_blank" class="lien" title="CV"><i class="fa fa-file-text" style="font-size:48px;"></i></a></p>
+            <p><a href="mailto:theotim@outlook.fr" type="email" class="lien" id="mail" title="EMAIL"><i class="fa fa-envelope" style="font-size:48px"></i></a></p>
+            <p><a href="https://www.linkedin.com/in/theotim-h-6803b886/" target="_blank" class="lien" id="linke" title="LINKEDIN"><i class="fa fa-linkedin-square" style="font-size:48px"></i></a></p>
+            <p><a href="#" class="lien" title="GITHUB"><i class="fa fa-github" style="font-size:48px"></i></a></p>
+
+    </div>
+    </div>
+     <div id="gauche">
+         <form action="{{ url_for('home') }}" method=post>
+            {% for message in get_flashed_messages() %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+
+
+            {{ form.hidden_tag() }}
+
+            {{ form.nom.label }}
+            {{ form.nom }}
+
+
+            {{ form.email.label }}
+            {{ form.email }}
+
+
+            {{ form.sujet.label }}
+            {{ form.sujet }}
+
+            {{ form.message.label }}
+            {{ form.message }}
+
+             <p id="inscription">{{ form.envoyer }}</p>
+        </form>
+    </div>
+</div>
+</div>
+<script src="static/javascript/ajax.js"></script>
+<script type=text/javascript src="{{  url_for('static', filename='jquery.js') }}"></script>
+</body>
+
+
+{% endblock %}
+
