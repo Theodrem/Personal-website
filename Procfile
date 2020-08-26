@@ -1,1 +1,1 @@
-web: gunicorn flaskproject:app
+web: gunicorn lancer:app
