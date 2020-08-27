@@ -104,7 +104,7 @@ nav.scroll {
     }
     nav {
         background-position: top;
-         min-height: 50vh;
+       min-height: 70vh;
     }
     nav.scroll {
         min-height: 6vh;
