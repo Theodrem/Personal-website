@@ -100,11 +100,11 @@ nav.scroll {
         margin-left: 30px;
     }
     #title{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     nav {
         background-position: top;
-         min-height: 400px;
+         min-height: 50vh;
     }
     nav.scroll {
         min-height: 6vh;
