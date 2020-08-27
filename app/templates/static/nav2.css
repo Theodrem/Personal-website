@@ -111,6 +111,6 @@ nav.scroll {
 @media screen and (max-width:1000px){
     nav {
        background-position: top;
-       min-height: 100vh;
+       min-height: 70vh;
     }
 }
