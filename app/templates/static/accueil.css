@@ -1,3 +1,7 @@
+* {
+    font-family: Montserrat Medium;
+}
+
 #ensemble {
     display: flex;
     flex-direction: column;
@@ -12,7 +16,6 @@
 }
 
 h2 {
-    font-family: Montserrat Medium;
     font-size: 3em;
     text-align: center;
     margin-top: 50px;
@@ -86,7 +89,6 @@ label {
 form {
     display: flex;
     flex-direction: column;
-    font-family: Montserrat;
     align-items: center;
     width: 100%;
     max-width: 550px;
@@ -103,7 +105,6 @@ input {
 }
 
 input[type=submit] {
-    font-family: Montserrat;
     background-color: #FF7800;
     color: white;
 }
@@ -124,7 +125,6 @@ i:hover {
 }
 
 .lien {
-    font-family: Montserrat;
     text-decoration: none;
     font-size: 1em;
     color: black;
@@ -143,7 +143,6 @@ i:hover {
 }
 
 #bio {
-    font-family: Montserrat;
     font-size: 2em;
     text-align: left;
     background-size: 200px 100px;
@@ -151,7 +150,6 @@ i:hover {
 }
 
 p {
-    font-family: Montserrat Medium;
     font-size: 1.5em;
 }
 
