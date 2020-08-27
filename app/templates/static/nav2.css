@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 
 #projet {
@@ -15,7 +14,7 @@
 
 #title {
     font-size: 3em;
-    font-family: Montserrat Medium;
+    font-family: Montserrat;
     z-index: 10;
 }
 
@@ -40,8 +39,8 @@ nav {
     background-size: cover;
     width: 100%;
     font-family: Montserrat;
-    transition: 0.7s;
     z-index: 100;
+
 }
 
 
@@ -110,9 +109,6 @@ nav.scroll {
     }
     nav.scroll {
         min-height: 6vh;
-
-}
-
-
+    }
 
 }
