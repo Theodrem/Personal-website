@@ -2,11 +2,10 @@ const nav = document.querySelector('nav');
 const title = document.querySelector('#title');
 const head = document.querySelector('#head');
 const logo = document.querySelector('#theo');
-const text = document.querySelector('.h1');
-const projet = document.querySelector('#projet');
+
 
 window.addEventListener('scroll', () => {
-        if (window.scrollY > 170) {
+        if (window.scrollY > 100) {
             nav.classList.add('scroll');
             title.classList.add('disparition');
             head.classList.add('disparition')
