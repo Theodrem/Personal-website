@@ -232,3 +232,12 @@ label {
 #bouton {
     margin-top: 30px;
 }
+
+.hover {
+    height: 400px;
+}
+.image:hover .hover{
+  width: 800px;
+}
+
+}
