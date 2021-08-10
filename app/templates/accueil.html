@@ -1,54 +1,99 @@
 {% extends "nav.html" %}
 {% block content %}
 <head>
-
     <meta charset="UTF-8">
-    <link type="text/css" href="static/accueil.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
+    <link type="text/css" href="static/style.css" rel="stylesheet">
     <title>Theotim Herin</title>
-
 </head>
-<body>
-<div id="ensemble">
-    <h1 id="welcome">Welcome !</h1>
-
-        <h2>Projets</h2>
-        <div id="projets">
-            <div class="image">
-                <a href="#" class="tab"><img src="static/image/icone-smooth.png"></a>
-                <div class="hover">
-                    <h2><a href="https://smoothie-fits.herokuapp.com/" target="_blank" >SmoothieFit.fr</a></h2>
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-white mb-2"><b>Théotim Herin</b></h1>
+                    <p class="lead fw-normal text-white-50 mb-4">Développeur d'application Python</p>
                 </div>
             </div>
-
-            <div class="image">
-                    <a href="https://smoothie-fits.herokuapp.com/" class="tab"><img src="static\image\iconeSIte.png"></a>
-                <div class="hover">
-                    <h2><a href="http://theotim-herin.herokuapp.com/" target="_blank" >Site Perso</a></h2>
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="static/image/space.png" alt="..." /></div>
+        </div>
+    </div>
+</header>
+<section class="page-section bg-warning py-5" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase"><b>About</b></h2>
+        <div class="row text-center" >
+            <div class="col"><p class="lead">Je m'appelle Théotim Herin. Passionné par la programmation depuis maintenant deux ans. J'ai décidé de me réorienté dans cette branche. Je suis diplomé du Parcours développeur d'application Python de l'école d'Openclassrooms. Je recherche donc un job de développeur junior.</p></div>
+        </div>
+        <!-- About Section Button-->
+        <div class="text-center mt-4" style="margin-bottom: 30px;">
+            <a class="btn btn-xl btn-outline-dark" href="https://startbootstrap.com/theme/freelancer/">
+                Download CV!  
+            </a>
+        </div>
+    </div>
+</section>
+<section class="py-5" id="project">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <div class="text-center">
+                    <h2 class="fw-bolder"><b>Projet</b></h2>
+                    <p class="lead fw-normal text-muted mb-5">Presentation de certains de mes projets scolaires et personnels. Retrouvez tous mes codes ur Github.</p>
                 </div>
             </div>
         </div>
+        <div class="row gx-5" style="margin-top: 50px;">
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="static/image/gool.PNG" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Gloot</div>
+                        <a class="text-decoration-none link-dark stretched-link" href="http://159.65.56.183/"><h5 class="card-title mb-3">Site web de suggestion de défis</h5></a>
+                        <p class="card-text mb-0">Projet effectué avec Django-Rest-Framework/Vue.js. Déployé avec Ubuntu/Nginx/Gunicorn et hébergé par Digital Océan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="static/image/pure.PNG" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Pure Beurre</div>
+                        <a class="text-decoration-none link-dark stretched-link" href="http://165.227.235.195/"><h5 class="card-title mb-3">Site web de suggestion de substituts alimentaires</h5></a>
+                        <p class="card-text mb-0">Projet effectué avec Django3 Déployé avec Ubuntu/Nginx/Gunicorn et hébergé par Digital Océan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="static/image/grand-p.PNG" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Grand Papy Bot</div>
+                        <a class="text-decoration-none link-dark stretched-link" href="https://grand-papy-bot-th.herokuapp.com/"><h5 class="card-title mb-3">Site web de Géolocalisation et d'histoire</h5></a>
+                        <p class="card-text mb-0">Projet effectué avec Flask. Déployé avec Heroku.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="static/image/maze.jpg" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Grand Papy Bot</div>
+                        <a class="text-decoration-none link-dark stretched-link" href="https://github.com/Theodrem/Labyrinthe-Openclassrooms"><h5 class="card-title mb-3">Jeu de labyrinthe en 2D</h5></a>
+                        <p class="card-text mb-0">Projet effectué en langage Python. Le programme est fait en Programmation orienté objet et utilise l'outil Pygame.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Call to action-->
+    </div>
+</section>
+<body>
     <h2>Contactez-moi</h2>
 <div id="contact">)
-    <div id="droite">
-        <img src="static/image/contact-orid.png" id="ordix">
-        <p id="bio">Je suis à la recherche d'une entreprise,<br>
-           En vue d'intégrer le parcours de<br>
-          développeur d'application Python<br>
-          d'Openclassrooms en alternance.<br>
-          Vous pouvez voir tous mes projets,<br>
-          mon cv et mon Github sont<br>
-          en bas de la page.</p>
-        <div id="bouton">
-            <p><a href="static/image/Theotim Herin' cv.pdf" target="_blank" class="lien" title="CV"><i class="fa fa-file-text" style="font-size:48px;"></i></a></p>
-            <p><a href="mailto:theotim@outlook.fr" type="email" class="lien" id="mail" title="EMAIL"><i class="fa fa-envelope" style="font-size:48px"></i></a></p>
-            <p><a href="https://www.linkedin.com/in/theotim-h-6803b886/" target="_blank" class="lien" id="linke" title="LINKEDIN"><i class="fa fa-linkedin-square" style="font-size:48px"></i></a></p>
-            <p><a href="https://github.com/Theodrem" class="lien" title="GITHUB" target="_blank" ><i class="fa fa-github" style="font-size:48px"></i></a></p>
-
-    </div>
-    </div>
      <div id="gauche">
          <form action="{{ url_for('home') }}" method=post>
             {% for message in get_flashed_messages() %}
