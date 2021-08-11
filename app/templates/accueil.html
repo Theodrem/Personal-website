@@ -5,27 +5,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link type="text/css" href="static/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
     <title>Theotim Herin</title>
 </head>
-<header class="bg-dark py-5">
+<header class="py-5"> 
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
                 <div class="my-5 text-center text-xl-start">
-                    <h1 class="display-5 fw-bolder text-white mb-2"><b>Théotim Herin</b></h1>
-                    <p class="lead fw-normal text-white-50 mb-4">Développeur d'application Python</p>
+                    <h1 class="display-5 fw-bolder  mb-2"><b>Théotim Herin</b></h1>
+                    <p class="lead fw-normal mb-4">Développeur d'application Python</p>
                 </div>
             </div>
-            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="static/image/space.png" alt="..." /></div>
+            
         </div>
     </div>
 </header>
-<section class="page-section bg-warning py-5" id="about">
-    <div class="container">
+<section class="page-section py-5" id="about"  style="background: #e7e5e5;">
+    <div class="container text-center">
         <!-- About Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase"><b>About</b></h2>
-        <div class="row text-center" >
-            <div class="col"><p class="lead">Je m'appelle Théotim Herin. Passionné par la programmation depuis maintenant deux ans. J'ai décidé de me réorienté dans cette branche. Je suis diplomé du Parcours développeur d'application Python de l'école d'Openclassrooms. Je recherche donc un job de développeur junior.</p></div>
+        <h2 class="page-section-heading text-center text-uppercase text-danger"><b>About</b></h2>
+        <i class="fas fa-minus fa-2x"></i>
+        <div class="row text-center">
+            <div class="col-md-12 text-center">
+                <img class="img-fluid rounded-3 my-5" src="static/image/moi.jpg" alt="..." style="border-radius: 600px;" id="profile"/>
+                
+            </div>
+            
+            <div class="col">
+                <p style="font-size: 1.3rem;">Je m'appelle Théotim Herin. Passionné par la programmation depuis maintenant deux ans. J'ai décidé de me réorienté dans cette branche. Je suis diplomé du Parcours développeur d'application Python de l'école d'Openclassrooms. Je suis avctivement à la recherche d'un job de développeur junior.
+                <br><b>Intéressé par mon profile?<a href="mailto:theotim.herin@gmail.com" class="link-about text-danger">Email</a></b></p>
+            </div>
         </div>
         <!-- About Section Button-->
         <div class="text-center mt-4" style="margin-bottom: 30px;">
@@ -34,14 +44,21 @@
             </a>
         </div>
     </div>
+    <div class="row py-4 d-flex align-items-center">
+        <div class="col-md-12 text-center">
+            <a href="https://www.linkedin.com/in/theotim-h-6803b886/" target="_blank" class="link-about"><i class="fab fa-linkedin-in text-danger mr-4 fa-2x"></i></a>
+            <a href="https://github.com/Theodrem/Grand_Papy_Openclassrooms" target="_blank" class="link-about"><i class="fab fa-github text-danger mr-4 fa-2x"></i></a>
+        </div>
+    </div>
 </section>
-<section class="py-5" id="project">
+<section class="py-5" id="project" style="background: #9F9F9F;">
     <div class="container px-5 my-5">
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-8 col-xl-6">
                 <div class="text-center">
-                    <h2 class="fw-bolder"><b>Projet</b></h2>
-                    <p class="lead fw-normal text-muted mb-5">Presentation de certains de mes projets scolaires et personnels. Retrouvez tous mes codes ur Github.</p>
+                    <h2 class="fw-bolder text-danger"><b>PROJET</b></h2>
+                    <i class="fas fa-minus fa-2x"></i>
+                    <p class="lead fw-normal text-white mb-5">Presentation de certains de mes projets scolaires et personnels. Retrouvez tous mes codes ur Github.</p>
                 </div>
             </div>
         </div>
@@ -91,38 +108,73 @@
         <!-- Call to action-->
     </div>
 </section>
-<body>
-    <h2>Contactez-moi</h2>
-<div id="contact">)
-     <div id="gauche">
-         <form action="{{ url_for('home') }}" method=post>
-            {% for message in get_flashed_messages() %}
-                <div class="flash">{{ message }}</div>
-            {% endfor %}
-
-
-            {{ form.hidden_tag() }}
-
-            {{ form.nom.label }}
-            {{ form.nom }}
-
-
-            {{ form.email.label }}
-            {{ form.email }}
-
-
-            {{ form.sujet.label }}
-            {{ form.sujet }}
-
-            {{ form.message.label }}
-            {{ form.message }}
-
-             <p id="inscription">{{ form.envoyer }}</p>
-        </form>
+<section class="p-5 skill">
+    <div class="container-fluid">
+        <!-- title -->
+        <div class="row text-center">
+            <div class="col m-4">
+                <h2  class="text-danger"><b>SKILLS</b></h2>
+                <i class="fas fa-minus fa-2x"></i>
+            </div>
+        </div>
+        <!-- end of title -->
+        <div class="row my-5">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-cogs fa-3x text-danger mb-4"></i>
+                <h1 class="mb-3"> Back End</h1>
+                <p class="text-danger"><b>Python, Django3, Django-Rest-Framework, Flask</b></p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-crop fa-3x text-danger mb-4"></i>
+                <h1 class="mb-3"> Front End</h1>
+                <p class="text-danger"><b>Javascript, Vuejs, Bootstrap, HTML/CSS</b> </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-database fa-3x text-danger mb-4"></i>
+                <h1 class="mb-3"> Databases</h1>
+                <p class="text-danger"><b>SQL, SQLAlchemy, MySQL, Sqlite, PostgreSql</b> </p>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-</body>
+</section>
+<section id="contact "class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-danger" style="margin-top: 20px;"><b>CONTACT</b></h2>
+                <i class="fas fa-minus fa-2x text-white"></i>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 offset-3 text-center ">
+                <form action="{{ url_for('home') }}" method=post>
+                    {% for message in get_flashed_messages() %}
+                        <div class="flash">{{ message }}</div>
+                    {% endfor %}
+        
+        
+                    {{ form.hidden_tag() }}
+        
+                    {{ form.nom.label (style="margin-top:30px; font-weight:bold; color: white;") }}
+                    {{ form.nom (class="form-control",id="email",required='required',value="",placeholder="Enter nom") }}  
+        
+        
+                    {{ form.email.label (style="margin-top:30px; font-weight:bold; color:white;") }}
+                    {{ form.email (class="form-control",id="email",required='required',type="text",value="",placeholder="Enter email") }}
+        
+        
+                    {{ form.sujet.label (style="margin-top:30px; font-weight:bold; color:white;") }}
+                    {{ form.sujet (class="form-control",id="email",required='required',type="text",value="",placeholder="Enter sujet") }}
+        
+                    {{ form.message.label (style="margin-top:30px; font-weight:bold; color:white;") }}
+                    {{ form.message (class="form-control",id="email",required='required',type="text",value="",placeholder="Enter message")  }}
+        
+                     <p id="inscription" style="margin-top: 20px;">{{ form.envoyer }}</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 {% endblock %}

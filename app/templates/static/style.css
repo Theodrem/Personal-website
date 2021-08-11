@@ -1,3 +1,13 @@
 * {
     font-family: 'Montserrat';
 }
+
+#profile {
+    width: 300px;
+    height: 253px;
+}
+
+
+.link-about:hover {
+    color: rgb(3, 3, 3);
+}
