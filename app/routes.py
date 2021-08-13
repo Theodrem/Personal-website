@@ -22,7 +22,7 @@ def home():
     if request.method == 'POST':
         if form.validate() == False:
             flash('Remplir tous les champs')
-            return render_template('accueil.html', form=form)
+            return render_template('index.html', form=form)
         else:
             msg = Message(form.sujet.data, sender='theotim@outlook.fr', recipients=['theotim@outlook.fr'])
             msg.body = "Nom = {}, mail = {}, msg = {}".format(form.nom.data, form.email.data, form.message.data)
@@ -30,7 +30,7 @@ def home():
             return 'form_posted'
 
     elif request.method == 'GET':
-        return render_template('accueil.html', form=form)
+        return render_template('index.html', form=form)
 
 
 
