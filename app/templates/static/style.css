@@ -2,3 +2,40 @@
     font-family: 'Montserrat';
 }
 
+
+header {
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.8) 100%), url("image/code.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+  }
+
+h1 {
+    font-size: 3.2rem;
+}
+.title {
+    font-size: 2.5rem;
+}
+#title {
+    margin-top: 350px;
+}
+
+
+
+
+  @media screen and (max-width: 700px) {
+      h1 {
+          font-size: 2.7rem;
+      }
+      .title {
+          font-size: 2rem;
+      }
+      #title {
+          margin-top: 200px;
+      }
+  }
+
+  
